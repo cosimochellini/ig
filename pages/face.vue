@@ -1,51 +1,26 @@
 <template>
-  <body>
-  <hr>
-  <section>
-    <h3>Using pico.js and lploc.js for real-time localization of eye pupils</h3>
-    <p>Click the button below and allow the page to access your webcam.</p>
-    <p><b>All the processing is done on the client side, i.e., without sending images to a server.</b></p>
-    <p>More information about the algotihm is available <a href="../">here</a>.</p>
-  </section>
-  <hr>
-  <p>
-    <input type="button" value="Start webcam feed" @click="callback">
-  </p>
-  <div>
+  <v-container fluid>
+    <v-btn @click="callback" color="green" block text> GO</v-btn>
     <v-card
-      class="mx-auto card"
-      max-width="344"
+      v-if="face.depth>0"
       :style="cardStyle"
       elevation="24"
+      max-width="600"
+      class="mx-auto card"
     >
       <v-card-text>
-        <div>Word of the Day</div>
         <p class="display-1 text--primary">
-          be•nev•o•lent
+          TESTO
         </p>
-        <p>adjective</p>
-        <div class="text--primary">
-          well meaning and kindly.<br>
-          "a benevolent smile"
-        </div>
       </v-card-text>
-      <v-card-actions>
-        <v-btn
-          text
-          color="deep-purple accent-4"
-        >
-          Learn More
-        </v-btn>
-      </v-card-actions>
     </v-card>
     <canvas width=640 height=480></canvas>
-  </div>
-  </body>
+  </v-container>
 </template>
 
 <script>
-  import callback from '../services/runner'
   import hub from '~/services/hubService'
+  import callback from '~/services/runner'
 
   const angle = ([cy, cx] = [], [ey, ex] = []) => {
     const dy = ey - cy
@@ -57,7 +32,6 @@
   }
 
   const average = ([cy, cx] = [], [ey, ex] = []) => [(cy + ey) / 2, (cx + ex) / 2]
-
 
   export default {
     name: 'face',
@@ -82,9 +56,9 @@
         const [x, y] = average(eye1, eye2)
 
         return {
-          left: y + 'px',
+          left: (window.innerWidth / 2) - y + 'px',
           top: (x + -(this.face.depth)) + 'px',
-          transform: `rotate(${angle(eye1, eye2)}deg)`
+          transform: `rotate(${-angle(eye1, eye2)}deg)`
         }
       }
     }
@@ -94,5 +68,12 @@
 <style scoped>
   .card {
     position: absolute;
+    z-index: 999;
+  }
+
+  canvas {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    z-index: 1;
   }
 </style>

@@ -17,6 +17,7 @@ const canvas = (callback: (video: HTMLVideoElement) => void) => {
   streamContainer.appendChild(videoElement)
   document.body.appendChild(streamContainer)
 
+
   // The callback happens when we are starting to stream the video.
   navigator.mediaDevices.getUserMedia({ video: true, audio: false }).then(stream => {
     // Yay, now our webcam input is treated as a normal video and

@@ -1,12 +1,13 @@
 import hub from '~/services/hubService'
 import { canvas } from '~/services/index'
 
+const puplocurl = 'https://f002.backblazeb2.com/file/tehnokv-www/posts/puploc-with-trees/demo/puploc.bin'
+const cascadeurl = 'https://raw.githubusercontent.com/nenadmarkus/pico/c2e81f9d23cc11d1a612fd21e4f9de0921a5d0d9/rnt/cascades/facefinder'
+
+let dets = null
 let initialized = false
 let facefinder_classify_region = () => -1.0
 let do_puploc = (r: any, c: any, s: any, number: number, image: { pixels: Uint8Array; nrows: number; ncols: number; ldim: number }) => [-1.0, -1.0]
-const cascadeurl = 'https://raw.githubusercontent.com/nenadmarkus/pico/c2e81f9d23cc11d1a612fd21e4f9de0921a5d0d9/rnt/cascades/facefinder'
-const puplocurl = 'https://f002.backblazeb2.com/file/tehnokv-www/posts/puploc-with-trees/demo/puploc.bin'
-let dets = null
 
 export default () => {
   const ctx = document.getElementsByTagName('canvas')[0].getContext('2d')
