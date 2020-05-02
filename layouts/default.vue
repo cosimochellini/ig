@@ -1,11 +1,11 @@
 <template>
-  <v-app id="app" dark>
+  <v-app id="app" dark class="overflow-hidden">
     <v-content>
       <v-container>
         <nuxt />
       </v-container>
     </v-content>
-    <v-bottom-navigation scroll-target="app">
+    <v-bottom-navigation scroll-target="app" app absolute>
       <v-btn value="recent">
         <span>Recent</span>
         <v-icon>mdi-history</v-icon>

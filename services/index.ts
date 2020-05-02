@@ -3,7 +3,7 @@ const canvas = (callback: (video: HTMLVideoElement) => void) => {
   // "hidden div" hack for dynamic loading.
   const streamContainer = document.createElement('div')
   const videoElement = document.createElement('video')
-
+  const currentApp = document.getElementById('app')
   // If we don't do this, the stream will not be played.
   // By the way, the play and pause controls work as usual
   // for streamed videos.
@@ -12,10 +12,10 @@ const canvas = (callback: (video: HTMLVideoElement) => void) => {
 
   // The video should fill out all of the canvas
   videoElement.setAttribute('width', '1')
-  videoElement.setAttribute('height', '1')
+  // videoElement.setAttribute('height', '1')
 
   streamContainer.appendChild(videoElement)
-  document.body.appendChild(streamContainer)
+  currentApp?.appendChild(streamContainer)
 
   // The callback happens when we are starting to stream the video.
   navigator.mediaDevices

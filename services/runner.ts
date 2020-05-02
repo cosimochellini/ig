@@ -77,7 +77,7 @@ export default () => {
       pixels: rgbaToGrayscale(rgba, 480, 640),
       nrows: 480,
       ncols: 640,
-      ldim: 640
+      ldim: 640,
     }
     const params = {
       shiftfactor: 0.1, // move the detection window by 10% of its size
@@ -98,7 +98,7 @@ export default () => {
       // check the detection score
       // if it's above the threshold, draw it
       // (the constant 50.0 is empirical: other cascades might require a different one)
-      if (dets[i][3] > 50.0) {
+      if (dets[i][3] > 20.0) {
         let r, c, s
         //
         if (ctx) {

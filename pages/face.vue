@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-btn color="green" block text @click="callback"> GO</v-btn>
+    <v-btn color="green" block @click="callback"> GO</v-btn>
     <v-card
       v-if="face.depth > 0"
       :style="cardStyle"
@@ -14,7 +14,7 @@
         </p>
       </v-card-text>
     </v-card>
-    <div class="ma-auto text-center">
+    <div class="ma-auto text-center py-4">
       <canvas></canvas>
     </div>
   </div>
