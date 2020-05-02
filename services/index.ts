@@ -17,19 +17,23 @@ const canvas = (callback: (video: HTMLVideoElement) => void) => {
   streamContainer.appendChild(videoElement)
   document.body.appendChild(streamContainer)
 
-
   // The callback happens when we are starting to stream the video.
-  navigator.mediaDevices.getUserMedia({ video: true, audio: false }).then(stream => {
-    // Yay, now our webcam input is treated as a normal video and
-    // we can start having fun
-    videoElement.srcObject = stream
-    // Let's start drawing the canvas!
-    update(callback, videoElement)
-  }, console.log)
+  navigator.mediaDevices
+    .getUserMedia({ video: true, audio: false })
+    .then((stream) => {
+      // Yay, now our webcam input is treated as a normal video and
+      // we can start having fun
+      videoElement.srcObject = stream
+      // Let's start drawing the canvas!
+      update(callback, videoElement)
+    })
 
   // As soon as we can draw a new frame on the canvas, we call the `draw` function
   // we passed as a parameter.
-  const update = (callback: (video: HTMLVideoElement) => void, video: HTMLVideoElement) => {
+  const update = (
+    callback: (video: HTMLVideoElement) => void,
+    video: HTMLVideoElement
+  ) => {
     const loop = () => {
       callback(video)
       requestAnimationFrame(loop)
@@ -38,6 +42,4 @@ const canvas = (callback: (video: HTMLVideoElement) => void) => {
   }
 }
 
-export {
-  canvas
-}
+export { canvas }

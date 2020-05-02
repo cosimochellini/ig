@@ -14,15 +14,14 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: process.env.npm_package_description || ''
-      }
+        content: process.env.npm_package_description || '',
+      },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     script: [
       { src: 'https://cdn.jsdelivr.net/gh/tehnokv/picojs@master/pico.js' },
       { src: 'https://cdn.jsdelivr.net/gh/tehnokv/picojs@master/lploc.js' },
-    ]
-
+    ],
   },
   /*
    ** Customize the progress-bar color
@@ -48,7 +47,7 @@ export default {
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
     // Doc: https://github.com/nuxt-community/dotenv-module
-    '@nuxtjs/dotenv'
+    '@nuxtjs/dotenv',
   ],
   /*
    ** Axios module configuration
@@ -62,7 +61,7 @@ export default {
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
     theme: {
-      dark: true,
+      dark: false,
       themes: {
         dark: {
           primary: colors.blue.darken2,
@@ -71,10 +70,10 @@ export default {
           info: colors.teal.lighten1,
           warning: colors.amber.base,
           error: colors.deepOrange.accent4,
-          success: colors.green.accent3
-        }
-      }
-    }
+          success: colors.green.accent3,
+        },
+      },
+    },
   },
   /*
    ** Build configuration
@@ -83,7 +82,6 @@ export default {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {
-    }
-  }
+    extend(_config, _ctx) {},
+  },
 }
