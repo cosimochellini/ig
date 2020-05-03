@@ -1,32 +1,40 @@
 [
   {
     "text": "entità",
-    "img": "",
+    "img": "https://dzwonsemrish7.cloudfront.net/items/2Q190g3q2E3T2P1m240U/cosimo.jpg",
     "color": "white",
-    "details" : {
-      "fullName": "cosimo",
-      "description": "gggggg",
-      "elite": true
-    }
+    "description": "descrizione dell'entità, va fatta lunga almeno un paio di righe",
+    "elite": true
   },
   {
     "text": "ernesto",
-    "img": "",
+    "img": "https://dzwonsemrish7.cloudfront.net/items/3d312Z2G0R3e1o1a363D/gg.jpg",
     "color": "blue",
-    "details" : {
-      "fullName": "cosimo",
-      "description": "gggggg",
-      "elite": true
-    }
+    "fullName": "ernesto punti",
+    "description": "descrizione di gg, va fatta lunga almeno un paio di righe",
+    "elite": true
   },
   {
     "text": "tocchino",
-    "img": "",
+    "img": "https://dzwonsemrish7.cloudfront.net/items/2e171v073U1l0F2p2I3N/tocco.jpg",
     "color": "green",
-    "details" : {
-      "fullName": "fede",
-      "description": "gggggg",
-      "elite": true
-    }
+    "fullName": "fede",
+    "description": "descrizione di fede, va fatta lunga almeno un paio di righe",
+    "elite": true
+  },
+  {
+    "text": "dieghino",
+    "img": "https://dzwonsemrish7.cloudfront.net/items/1m1x1m2l0p100g1e1q2b/dieghino.jpg",
+    "color": "purple darken-2",
+    "fullName": "dieghino",
+    "description": "descrizione di dieghino, va fatta lunga almeno un paio di righe",
+    "elite": true
+  },
+  {
+    "text": "cecche",
+    "img": "https://dzwonsemrish7.cloudfront.net/items/08121p1c0M3N2G3D250T/cecche.jpg",
+    "color": "brown",
+    "description": "descrizione del checche, va fatta lunga almeno un paio di righe",
+    "elite": true
   }
 ]

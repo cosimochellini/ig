@@ -1,16 +1,18 @@
 <template>
   <div>
-    <FilterApp :items="items" />
+    <FilterApp :items="items" @info="openModal" />
+    <Profile ref="profile" />
   </div>
 </template>
 
 <script>
 import items from '../data/ttanatori'
+import Profile from '~/components/profile'
 import FilterApp from '~/components/filter'
 
 export default {
   name: 'Index',
-  components: { FilterApp },
+  components: { Profile, FilterApp },
   data() {
     return {
       items,
@@ -19,6 +21,10 @@ export default {
   computed: {},
   mounted() {},
   destroyed() {},
-  methods: {},
+  methods: {
+    openModal(user) {
+      this.$refs.profile.openDialog(user)
+    },
+  },
 }
 </script>

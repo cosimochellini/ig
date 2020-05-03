@@ -1,4 +1,4 @@
-const canvas = (callback: (video: HTMLVideoElement) => void) => {
+const Canvas = (callback: (video: HTMLVideoElement) => void) => {
   // We can't `new Video()` yet, so we'll resort to the vintage
   // "hidden div" hack for dynamic loading.
   const streamContainer = document.createElement('div')
@@ -42,4 +42,4 @@ const canvas = (callback: (video: HTMLVideoElement) => void) => {
   }
 }
 
-export { canvas }
+export { Canvas }

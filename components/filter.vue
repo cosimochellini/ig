@@ -9,10 +9,7 @@
     >
       <v-list-item>
         <v-list-item-avatar color="grey">
-          <v-img
-            lazy-src="https://cdn.vuetifyjs.com/images/cards/mountain.jpg"
-            src="https://cdn.vuetifyjs.com/images/cards/mountain.jpg"
-          ></v-img>
+          <v-img :lazy-src="card.img" :src="card.img"></v-img>
         </v-list-item-avatar>
         <v-list-item-content>
           <v-list-item-title class="headline">
@@ -20,7 +17,7 @@
           </v-list-item-title>
         </v-list-item-content>
         <v-list-item-action v-show="process.ended">
-          <v-btn icon>
+          <v-btn icon @click="openDialog">
             <v-icon>mdi-information-outline</v-icon>
           </v-btn>
         </v-list-item-action>
@@ -69,6 +66,7 @@ export default {
         text: '',
         color: 'white',
         img: '',
+        fullProfile: null,
       },
     }
   },
@@ -97,9 +95,9 @@ export default {
       if (initial) {
         const endTime = new Date()
         endTime.setSeconds(now.getSeconds() + 5)
+        this.process.ended = false
         this.process.running = true
         this.process.endTime = endTime
-        this.process.ended = false
       }
 
       if (now.getTime() > this.process.endTime.getTime()) {
@@ -107,6 +105,7 @@ export default {
         this.card.text = finalItem.text
         this.card.img = finalItem.img
         this.card.color = finalItem.color
+        this.card.fullProfile = finalItem
         this.process.ended = true
         this.process.running = false
         return
@@ -116,6 +115,10 @@ export default {
       this.card.text = selectedItem.text
       this.card.img = selectedItem.img
       setTimeout(this.startFilter, 80)
+    },
+    openDialog() {
+      this.process.ended = false
+      this.$emit('info', this.card.fullProfile)
     },
   },
 }

@@ -1,5 +1,5 @@
 import hub from '~/services/hubService'
-import { canvas as Canvas } from '~/services/index'
+import { Canvas } from '~/services/streamVideo.service'
 
 const puplocUrl =
   'https://f002.backblazeb2.com/file/tehnokv-www/posts/puploc-with-trees/demo/puploc.bin'

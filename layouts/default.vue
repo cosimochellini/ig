@@ -7,8 +7,8 @@
     </v-content>
     <v-bottom-navigation
       v-model="currentPath"
-      fixed
       grow
+      absolute
       color="blue darken-2"
       @input="goTo"
     >
