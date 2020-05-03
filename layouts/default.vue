@@ -5,15 +5,21 @@
         <nuxt />
       </v-container>
     </v-content>
-    <v-bottom-navigation v-model="currentPath" app absolute @input="goTo">
+    <v-bottom-navigation
+      v-model="currentPath"
+      fixed
+      grow
+      color="blue darken-2"
+      @input="goTo"
+    >
       <v-btn value="recent">
         <span>Filer</span>
         <v-icon>mdi-face</v-icon>
       </v-btn>
 
       <v-btn value="favorites">
-        <span>Favorites</span>
-        <v-icon>mdi-heart</v-icon>
+        <span>History</span>
+        <v-icon>mdi-history</v-icon>
       </v-btn>
 
       <v-btn value="/social">

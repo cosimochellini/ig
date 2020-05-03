@@ -4,7 +4,6 @@
       v-show="process.running || process.ended"
       :style="cardStyle"
       elevation="24"
-      max-width="600"
       :color="process.ended ? card.color : 'white'"
       class="mx-auto card"
     >

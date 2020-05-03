@@ -67,7 +67,7 @@ export default (debug = false) => {
   /*
     (4) this function is called each time a video frame becomes available
   */
-  const processfn = (video: HTMLVideoElement): void => {
+  const process = (video: HTMLVideoElement): void => {
     // render the video frame to the canvas element and extract RGBA pixel data
     // eslint-disable-next-line no-unused-expressions
     ctx?.drawImage(video, 0, 0)
@@ -147,7 +147,7 @@ export default (debug = false) => {
   */
   if (ctx) {
     // @ts-ignore
-    window.canvas = new Canvas(processfn)
+    window.canvas = new Canvas(process)
   }
   /*
     (6) it seems that everything went well
