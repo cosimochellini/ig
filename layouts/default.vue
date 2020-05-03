@@ -1,14 +1,14 @@
 <template>
-  <v-app id="app" dark class="overflow-hidden">
+  <v-app id="app" class="overflow-hidden">
     <v-content>
       <v-container>
         <nuxt />
       </v-container>
     </v-content>
-    <v-bottom-navigation scroll-target="app" app absolute>
+    <v-bottom-navigation v-model="currentPath" app absolute @input="goTo">
       <v-btn value="recent">
-        <span>Recent</span>
-        <v-icon>mdi-history</v-icon>
+        <span>Filer</span>
+        <v-icon>mdi-face</v-icon>
       </v-btn>
 
       <v-btn value="favorites">
@@ -16,38 +16,25 @@
         <v-icon>mdi-heart</v-icon>
       </v-btn>
 
-      <v-btn value="nearby">
-        <span>Nearby</span>
-        <v-icon>mdi-map-marker</v-icon>
+      <v-btn value="/social">
+        <span>Social</span>
+        <v-icon>mdi-link-variant</v-icon>
       </v-btn>
     </v-bottom-navigation>
   </v-app>
 </template>
 
-<script lang="ts">
+<script>
 export default {
   data() {
     return {
-      clipped: false,
-      drawer: false,
-      fixed: false,
-      items: [
-        {
-          icon: 'mdi-apps',
-          title: 'Welcome',
-          to: '/',
-        },
-        {
-          icon: 'mdi-chart-bubble',
-          title: 'Inspire',
-          to: '/inspire',
-        },
-      ],
-      miniVariant: false,
-      right: true,
-      rightDrawer: false,
-      title: 'Vuetify.js',
+      currentPath: null,
     }
+  },
+  methods: {
+    goTo(path) {
+      this.$router.push(path)
+    },
   },
 }
 </script>

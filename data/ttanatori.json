@@ -1,0 +1,32 @@
+[
+  {
+    "text": "entità",
+    "img": "",
+    "color": "white",
+    "details" : {
+      "fullName": "cosimo",
+      "description": "gggggg",
+      "elite": true
+    }
+  },
+  {
+    "text": "ernesto",
+    "img": "",
+    "color": "blue",
+    "details" : {
+      "fullName": "cosimo",
+      "description": "gggggg",
+      "elite": true
+    }
+  },
+  {
+    "text": "tocchino",
+    "img": "",
+    "color": "green",
+    "details" : {
+      "fullName": "fede",
+      "description": "gggggg",
+      "elite": true
+    }
+  }
+]

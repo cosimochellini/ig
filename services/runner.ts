@@ -36,7 +36,7 @@ const rgbaToGrayscale = (
   return gray
 }
 
-export default () => {
+export default (debug = false) => {
   const currentCanvas = document.getElementsByTagName('canvas')[0]
   currentCanvas.width = window.innerWidth * 0.9
   currentCanvas.height = window.innerHeight * 0.7
@@ -83,7 +83,7 @@ export default () => {
       shiftfactor: 0.1, // move the detection window by 10% of its size
       minsize: 100, // minimum size of a face
       maxsize: 1000, // maximum size of a face
-      scalefactor: 1.1 // for multiscale processing: resize the detection window by 10% when moving to the higher scale
+      scalefactor: 1.1, // for multiscale processing: resize the detection window by 10% when moving to the higher scale
     }
     // run the cascade over the frame and cluster the obtained detections
     // dets is an array that contains (r, c, s, q) quadruplets
@@ -101,7 +101,7 @@ export default () => {
       if (dets[i][3] > 20.0) {
         let r, c, s
         //
-        if (ctx) {
+        if (ctx && debug) {
           ctx.beginPath()
           ctx.arc(dets[i][1], dets[i][0], dets[i][2] / 2, 0, 2 * Math.PI, false)
           ctx.lineWidth = 3
@@ -118,7 +118,7 @@ export default () => {
         s = 0.35 * dets[i][2]
         ;[r, c] = doPuploc(r, c, s, 63, image)
         const eye1 = [r, c]
-        if (r >= 0 && c >= 0 && ctx) {
+        if (r >= 0 && c >= 0 && ctx && debug) {
           ctx.beginPath()
           ctx.arc(c, r, 1, 0, 2 * Math.PI, false)
           ctx.lineWidth = 3
@@ -131,7 +131,7 @@ export default () => {
         s = 0.35 * dets[i][2]
         ;[r, c] = doPuploc(r, c, s, 63, image)
         const eye2 = [r, c]
-        if (r >= 0 && c >= 0 && ctx) {
+        if (r >= 0 && c >= 0 && ctx && debug) {
           ctx.beginPath()
           ctx.arc(c, r, 1, 0, 2 * Math.PI, false)
           ctx.lineWidth = 3
