@@ -1,9 +1,9 @@
 <template>
   <v-dialog v-model="open">
     <v-card class="mx-auto">
-      <v-img height="150" :src="profile.img"></v-img>
+      <v-img height="150" :src="profile.computedImage"></v-img>
 
-      <v-card-title>{{ profile.fullName }}</v-card-title>
+      <v-card-title>{{ profile.computedNickname }}</v-card-title>
 
       <v-card-text>
         <v-row align="center" class="mx-0">

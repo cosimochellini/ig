@@ -44,12 +44,6 @@ export default {
       type: Array,
       required: true,
     },
-    finalItems: {
-      type: Array,
-      default() {
-        return this.items
-      },
-    },
   },
   data() {
     return {
@@ -101,19 +95,19 @@ export default {
       }
 
       if (now.getTime() > this.process.endTime.getTime()) {
-        const finalItem = randomItem(this.finalItems)
-        this.card.text = finalItem.text
-        this.card.img = finalItem.img
-        this.card.color = finalItem.color
+        const finalItem = randomItem(this.items)
         this.card.fullProfile = finalItem
+        this.card.text = finalItem.computedNickname
+        this.card.img = finalItem.computedImage
         this.process.ended = true
         this.process.running = false
         return
       }
 
-      const selectedItem = randomItem(this.items)
-      this.card.text = selectedItem.text
-      this.card.img = selectedItem.img
+      const currentItem = randomItem(this.items)
+      this.card.text = currentItem.computedNickname
+      this.card.img = currentItem.computedImage
+
       setTimeout(this.startFilter, 80)
     },
     openDialog() {

@@ -1,40 +1,333 @@
 [
   {
-    "text": "entità",
-    "img": "https://dzwonsemrish7.cloudfront.net/items/2Q190g3q2E3T2P1m240U/cosimo.jpg",
+    "name": "cosimo",
+    "nicknames": [
+      "faro",
+      "quello",
+      "entità",
+      "coccaccio"
+    ],
+    "images": [
+      "https://dzwonsemrish7.cloudfront.net/items/2Q190g3q2E3T2P1m240U/cosimo.jpg"
+    ],
     "color": "white",
     "description": "descrizione dell'entità, va fatta lunga almeno un paio di righe",
-    "elite": true
+    "elite": true,
+    "oldTanator": true,
+    "newTanator": false
   },
   {
-    "text": "ernesto",
-    "img": "https://dzwonsemrish7.cloudfront.net/items/3d312Z2G0R3e1o1a363D/gg.jpg",
+    "name": "giulio",
+    "nicknames": [
+      "gg",
+      "IPP",
+      "down",
+      "GGGG",
+      "Dong",
+      "Don g",
+      "giulio",
+      "ernesto",
+      "GGGGGGGGGG",
+      "jessica lover",
+      "ernesto punti",
+      "caccavellaamano",
+      "nipote di colui che inventò l'elba"
+    ],
+    "images": [
+      "https://dzwonsemrish7.cloudfront.net/items/3d312Z2G0R3e1o1a363D/gg.jpg",
+      "https://dzwonsemrish7.cloudfront.net/items/452T1d0b2S3E3W3L3A1F/00100sPORTRAIT_00100_BURST20181125215513535_COVER.jpg",
+      "https://dzwonsemrish7.cloudfront.net/items/170n3Z3J2J220r1V2q3y/IMG_20140511_001839.jpg",
+      "https://dzwonsemrish7.cloudfront.net/items/1x2Z1z0z3f022Y1D2t2I/IMG_20170811_172237.jpg",
+      "https://dzwonsemrish7.cloudfront.net/items/0G1v3V1o3x14110p161a/IMG_20171223_191928_001.jpg",
+      "https://dzwonsemrish7.cloudfront.net/items/2N0p1t2y3O3o2I3S230f/IMG_20180219_233248_001.jpg",
+      "https://dzwonsemrish7.cloudfront.net/items/0e3N2L3o0j3J0D2a0L0T/IMG_20181029_130732_232.jpg",
+      "https://dzwonsemrish7.cloudfront.net/items/0c3A1t300L3r3b3A1O22/IMG_20190201_222410%20(1).jpg",
+      "https://dzwonsemrish7.cloudfront.net/items/1t0U1b2N3o0o0a2q3u0s/IMG_20190201_222855_001.jpg",
+      "https://dzwonsemrish7.cloudfront.net/items/1k0U2m2c3K1k2J1h1D3u/IMG_20190724_183318.jpg"
+    ],
     "color": "blue",
-    "fullName": "ernesto punti",
     "description": "descrizione di gg, va fatta lunga almeno un paio di righe",
-    "elite": true
+    "elite": true,
+    "oldTanator": true,
+    "newTanator": true
   },
   {
-    "text": "tocchino",
-    "img": "https://dzwonsemrish7.cloudfront.net/items/2e171v073U1l0F2p2I3N/tocco.jpg",
+    "name": "federico",
+    "nicknames": [
+      "fede",
+      "tocco",
+      "tocchino",
+      "rocchino",
+      "federico",
+      "ricchinOne",
+      "impigiamato",
+      "capo dei negri",
+      "stupratore di donne a DnD"
+    ],
+    "images": [
+      "https://dzwonsemrish7.cloudfront.net/items/2e171v073U1l0F2p2I3N/tocco.jpg"
+    ],
     "color": "green",
-    "fullName": "fede",
     "description": "descrizione di fede, va fatta lunga almeno un paio di righe",
-    "elite": true
+    "elite": true,
+    "oldTanator": true,
+    "newTanator": false
   },
   {
-    "text": "dieghino",
-    "img": "https://dzwonsemrish7.cloudfront.net/items/1m1x1m2l0p100g1e1q2b/dieghino.jpg",
+    "name": "diego",
+    "nicknames": [
+      "prof",
+      "diegho",
+      "il buono",
+      "dieghino",
+      "dieghino dai denti a sciabola"
+    ],
+    "images": [
+      "https://dzwonsemrish7.cloudfront.net/items/1m1x1m2l0p100g1e1q2b/dieghino.jpg"
+    ],
     "color": "purple darken-2",
-    "fullName": "dieghino",
     "description": "descrizione di dieghino, va fatta lunga almeno un paio di righe",
-    "elite": true
+    "elite": true,
+    "oldTanator": true,
+    "newTanator": false
   },
   {
-    "text": "cecche",
-    "img": "https://dzwonsemrish7.cloudfront.net/items/08121p1c0M3N2G3D250T/cecche.jpg",
+    "name": "gabriele",
+    "nicknames": [
+      "orso",
+      "cecche",
+      "morto",
+      "gabri"
+    ],
+    "images": [
+      "https://dzwonsemrish7.cloudfront.net/items/08121p1c0M3N2G3D250T/cecche.jpg"
+    ],
     "color": "brown",
     "description": "descrizione del checche, va fatta lunga almeno un paio di righe",
-    "elite": true
+    "elite": true,
+    "oldTanator": true,
+    "newTanator": false
+  },
+  {
+    "name": "filippo",
+    "nicknames": [
+      "?",
+      "boh",
+      "pippo",
+      "filippo",
+      "pippolino"
+    ],
+    "images": [
+      "https://dzwonsemrish7.cloudfront.net/items/08121p1c0M3N2G3D250T/cecche.jpg"
+    ],
+    "color": "brown",
+    "description": "descrizione del pippolino, va fatta lunga almeno un paio di righe",
+    "elite": false,
+    "oldTanator": false,
+    "newTanator": true
+  },
+  {
+    "name": "gianandrea",
+    "nicknames": [
+      "giano",
+      "la migliore"
+    ],
+    "images": [
+      "https://dzwonsemrish7.cloudfront.net/items/08121p1c0M3N2G3D250T/cecche.jpg"
+    ],
+    "color": "yellow",
+    "description": "descrizione del giano, va fatta lunga almeno un paio di righe",
+    "elite": false,
+    "oldTanator": false,
+    "newTanator": true
+  },
+  {
+    "name": "ettore",
+    "nicknames": [
+      "etty",
+      "ettore",
+      "nah zista",
+      "leone da tastiera",
+      "dopato di poker"
+    ],
+    "images": [
+      "https://dzwonsemrish7.cloudfront.net/items/08121p1c0M3N2G3D250T/cecche.jpg"
+    ],
+    "color": "red",
+    "description": "descrizione del giano, va fatta lunga almeno un paio di righe",
+    "elite": false,
+    "oldTanator": true,
+    "newTanator": false
+  },
+  {
+    "name": "arturo",
+    "nicknames": [
+      "Roma",
+      "Don AR",
+      "Arturo",
+      "Paguro",
+      "Artuuu",
+      "Romacchino",
+      "Artuuuuuuuu",
+      "Artuuuuuuuuuuuu"
+    ],
+    "images": [
+      "https://dzwonsemrish7.cloudfront.net/items/08121p1c0M3N2G3D250T/cecche.jpg"
+    ],
+    "color": "green darken-2",
+    "description": "descrizione di arturo, va fatta lunga almeno un paio di righe",
+    "elite": false,
+    "oldTanator": true,
+    "newTanator": false
+  },
+  {
+    "name": "cristiano",
+    "nicknames": [
+      "cri",
+      "ratto",
+      "ptu ptu",
+      "crimani",
+      "crimani11"
+    ],
+    "images": [
+      "https://dzwonsemrish7.cloudfront.net/items/08121p1c0M3N2G3D250T/cecche.jpg"
+    ],
+    "color": "yellow darken-2",
+    "description": "descrizione di arturo, va fatta lunga almeno un paio di righe",
+    "elite": false,
+    "oldTanator": false,
+    "newTanator": true
+  },
+  {
+    "name": "alessandro",
+    "nicknames": [
+      "AleZ",
+      "Gemello #1",
+      "centauro",
+      "zeccone"
+    ],
+    "images": [
+      "https://dzwonsemrish7.cloudfront.net/items/08121p1c0M3N2G3D250T/cecche.jpg"
+    ],
+    "color": "blue",
+    "description": "descrizione di Ale, va fatta lunga almeno un paio di righe",
+    "elite": false,
+    "oldTanator": true,
+    "newTanator": false
+  },
+  {
+    "name": "francesco",
+    "nicknames": [
+      "FranciZ",
+      "Fruz",
+      "FantaFruz"
+    ],
+    "images": [
+      "https://dzwonsemrish7.cloudfront.net/items/08121p1c0M3N2G3D250T/cecche.jpg"
+    ],
+    "color": "brown",
+    "description": "descrizione di Francesco, va fatta lunga almeno un paio di righe",
+    "elite": false,
+    "oldTanator": true,
+    "newTanator": false
+  },
+  {
+    "name": "lorenzo",
+    "nicknames": [
+      "mora",
+      "gianni",
+      "morandi",
+      "lorenzooooo",
+      "lorenzo (chi l'ha mai chiamato così :O)",
+      "possessore della ppippi e di conseguenza la migliore"
+    ],
+    "images": [
+      "https://dzwonsemrish7.cloudfront.net/items/08121p1c0M3N2G3D250T/cecche.jpg"
+    ],
+    "color": "brown",
+    "description": "descrizione di Francesco, va fatta lunga almeno un paio di righe",
+    "elite": false,
+    "oldTanator": false,
+    "newTanator": true
+  },
+  {
+    "name": "riccardo",
+    "nicknames": [
+      "bolla",
+      "anti",
+      "antibolla"
+    ],
+    "images": [
+      "https://dzwonsemrish7.cloudfront.net/items/08121p1c0M3N2G3D250T/cecche.jpg"
+    ],
+    "color": "brown",
+    "description": "descrizione di Francesco, va fatta lunga almeno un paio di righe",
+    "elite": false,
+    "oldTanator": false,
+    "newTanator": true
+  },
+  {
+    "name": "andrea (anti)",
+    "nicknames": [
+      "bolla",
+      "anti",
+      "antibolla"
+    ],
+    "images": [
+      "https://dzwonsemrish7.cloudfront.net/items/08121p1c0M3N2G3D250T/cecche.jpg"
+    ],
+    "color": "brown",
+    "description": "descrizione di Francesco, va fatta lunga almeno un paio di righe",
+    "elite": false,
+    "oldTanator": false,
+    "newTanator": true
+  },
+  {
+    "name": "gianluca",
+    "nicknames": [
+      "Gianlu",
+      "vigno"
+    ],
+    "images": [
+      "https://dzwonsemrish7.cloudfront.net/items/08121p1c0M3N2G3D250T/cecche.jpg"
+    ],
+    "color": "orange",
+    "description": "descrizione del vigno, va fatta lunga almeno un paio di righe",
+    "elite": false,
+    "oldTanator": true,
+    "newTanator": false
+  },
+  {
+    "name": "elisa",
+    "nicknames": [
+      "elisa",
+      "carta",
+      "foglio",
+      "Epsilon2397"
+    ],
+    "images": [
+      "https://dzwonsemrish7.cloudfront.net/items/08121p1c0M3N2G3D250T/cecche.jpg"
+    ],
+    "color": "orange",
+    "description": "descrizione del vigno, va fatta lunga almeno un paio di righe",
+    "elite": false,
+    "oldTanator": false,
+    "newTanator": true
+  },
+  {
+    "name": "alice",
+    "nicknames": [
+      "ali",
+      "alice",
+      "ragazza del bolla"
+    ],
+    "images": [
+      "https://dzwonsemrish7.cloudfront.net/items/08121p1c0M3N2G3D250T/cecche.jpg"
+    ],
+    "color": "orange",
+    "description": "descrizione del vigno, va fatta lunga almeno un paio di righe",
+    "elite": false,
+    "oldTanator": false,
+    "newTanator": true
   }
 ]

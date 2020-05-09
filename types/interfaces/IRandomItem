@@ -1,0 +1,6 @@
+export interface IRandomItem {
+  nicknames: string[];
+  images: string[];
+  computedImage: string;
+  computedNickname: string;
+}
