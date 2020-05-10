@@ -17,6 +17,8 @@ class Tanator {
 
   newTanator: boolean
 
+  presences: string[]
+
   constructor(raw: any = {}) {
     const {
       text = '',
@@ -27,6 +29,7 @@ class Tanator {
       elite = false,
       oldTanator = false,
       newTanator = false,
+      presences = [],
     } = raw
 
     this.text = text
@@ -37,10 +40,15 @@ class Tanator {
     this.elite = elite
     this.oldTanator = oldTanator
     this.newTanator = newTanator
+    this.presences = presences
   }
 
   get computedImage(): string {
     return randomItem(this.images)
+  }
+
+  get defaultImage(): string {
+    return this.images[0]
   }
 
   get computedNickname(): string {

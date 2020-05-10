@@ -106,9 +106,9 @@ export default {
 
       const currentItem = randomItem(this.items)
       this.card.text = currentItem.computedNickname
-      this.card.img = currentItem.computedImage
+      this.card.img = currentItem.defaultImage
 
-      setTimeout(this.startFilter, 80)
+      setTimeout(this.startFilter, 100)
     },
     openDialog() {
       this.process.ended = false

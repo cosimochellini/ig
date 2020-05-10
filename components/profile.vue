@@ -1,24 +1,19 @@
 <template>
   <v-dialog v-model="open">
-    <v-card class="mx-auto">
-      <v-img height="150" :src="profile.computedImage"></v-img>
+    <v-card class="mx-auto" :color="profile.elite ? 'amber darken-2' : 'white'">
+      <v-img height="250" :src="profile.computedImage"></v-img>
 
       <v-card-title>{{ profile.computedNickname }}</v-card-title>
+      <v-card-subtitle v-if="profile.elite">
+        <p class="mb-0">
+          ttanatore elitario
+          <v-icon>
+            mdi-police-badge
+          </v-icon>
+        </p>
+      </v-card-subtitle>
 
       <v-card-text>
-        <v-row align="center" class="mx-0">
-          <v-rating
-            :value="4.5"
-            color="amber"
-            dense
-            half-increments
-            readonly
-            size="14"
-          ></v-rating>
-
-          <div class="grey--text ml-4">4.5 (413)</div>
-        </v-row>
-
         <div class="my-4 subtitle-1">
           magari una serie di proprietà
         </div>
@@ -34,7 +29,7 @@
 
       <v-card-text>
         <v-chip-group active-class="deep-purple accent-4 white--text" column>
-          <v-chip>Sat</v-chip>
+          <v-chip v-for="p in profile.presences">{{p}}</v-chip>
         </v-chip-group>
       </v-card-text>
 
