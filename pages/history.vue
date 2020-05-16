@@ -22,18 +22,30 @@
               v-html="item.description"
             ></v-list-item-subtitle>
           </v-list-item-content>
+          <v-list-item-action>
+            <v-btn icon @click="showModal(item)">
+              <v-icon>
+                mdi-information
+              </v-icon>
+            </v-btn>
+          </v-list-item-action>
         </v-list-item>
         <v-divider :key="index" :inset="item.inset"></v-divider>
       </template>
     </v-list>
+    <Profile ref="profile" />
   </div>
 </template>
 
 <script>
+  import Profile from '~/components/profile'
   import { getHistory } from '~/services/history.service'
 
   export default {
     name: 'History',
+    components:{
+      Profile,
+    },
     data() {
       return {
         items: []
@@ -45,6 +57,11 @@
           getHistory().then((h) => (this.items = h))
         },
         immediate: true
+      }
+    },
+    methods:{
+      showModal(user){
+        this.$refs.profile.openDialog(user)
       }
     }
   }
