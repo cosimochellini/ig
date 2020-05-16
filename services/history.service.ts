@@ -4,12 +4,12 @@ import { Tanator } from '~/types/classes/Tanator'
 const HISTORY_KEY = 'HISTORY_KEY'
 
 const getHistory = (): Promise<Tanator[]> => {
-  return new Promise<Tanator[]>((resolve, reject) => {
+  return new Promise<Tanator[]>((resolve) => {
     try {
       const rawItems = JSON.parse(<string>localStorage.getItem(HISTORY_KEY))
       resolve(bind(rawItems, Tanator))
     } catch (ex) {
-      reject(ex)
+      resolve([])
     }
   })
 }

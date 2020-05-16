@@ -36,6 +36,7 @@
 import hub from '~/services/hubService'
 import runCanvas from '~/services/runner'
 import { angle, average, randomItem } from '~/services/math.service'
+import { addItemToHistory } from '~/services/history.service'
 
 export default {
   name: 'FilterApp',
@@ -101,6 +102,8 @@ export default {
         this.card.img = finalItem.computedImage
         this.process.ended = true
         this.process.running = false
+        addItemToHistory(finalItem)
+
         return
       }
 

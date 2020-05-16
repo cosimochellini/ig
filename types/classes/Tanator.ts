@@ -29,7 +29,7 @@ class Tanator {
       elite = false,
       oldTanator = false,
       newTanator = false,
-      presences = [],
+      presences = []
     } = raw
 
     this.text = text
@@ -49,6 +49,10 @@ class Tanator {
 
   get defaultImage(): string {
     return this.images[0]
+  }
+
+  get defaultNickname(): string {
+    return this.nicknames[0]
   }
 
   get computedNickname(): string {
