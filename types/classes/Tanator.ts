@@ -54,6 +54,11 @@ class Tanator {
   get computedNickname(): string {
     return randomItem(this.nicknames)
   }
+
+  get computedCarousel(): string[] {
+    const firstImage = this.computedImage
+    return [firstImage, ...this.images.filter((i) => i !== firstImage)]
+  }
 }
 
 export { Tanator }

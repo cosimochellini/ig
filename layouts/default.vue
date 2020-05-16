@@ -2,7 +2,7 @@
   <v-app id="app" class="overflow-hidden">
     <v-content>
       <v-container>
-        <nuxt />
+        <nuxt keep-alive />
       </v-container>
     </v-content>
     <v-bottom-navigation
@@ -12,12 +12,12 @@
       color="blue darken-2"
       @input="goTo"
     >
-      <v-btn value="recent">
+      <v-btn value="/">
         <span>Filer</span>
         <v-icon>mdi-face</v-icon>
       </v-btn>
 
-      <v-btn value="favorites">
+      <v-btn value="/history">
         <span>History</span>
         <v-icon>mdi-history</v-icon>
       </v-btn>
@@ -37,9 +37,14 @@ export default {
       currentPath: null,
     }
   },
+  watch: {
+    currentPath() {
+      this.goTo()
+    },
+  },
   methods: {
-    goTo(path) {
-      this.$router.push(path)
+    goTo() {
+      this.$router.push(this.currentPath)
     },
   },
 }
